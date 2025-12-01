@@ -23,7 +23,6 @@ ForEach ($inst in ${data}) {
     } Else {
         $end = ${start} + ${count}
         If (${end} -gt 99) {
-            #$zeroPasses = ${zeroPasses} + 1
             $end = ${end} - 100
             If (${end} -ne 0) {
                 $zeroPasses = ${zeroPasses} + 1
