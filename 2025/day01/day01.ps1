@@ -1,11 +1,11 @@
 $data = Get-Content -Path ./2025/day01/input.txt
 $start = 50
-$zeroCountPt1 = $zeroCountPt2 = 0
+$zeroCount = $zeroCountPt2 = 0
 ForEach ($inst in ${data}) {
     $zeroPasses = 0
     $direction = ${inst}.Substring(0,1)
     $count = [int]${inst}.Substring(1)
-    If (${count}.ToString().Length -eq 3) {
+    If (${count}.ToString().Length -gt 2) {
         $zeroPasses = [int]${count}.ToString().Substring(0,1)
         $count = [int]${count}.ToString().Substring(1)
     }
@@ -25,11 +25,11 @@ ForEach ($inst in ${data}) {
         }
     }
     If (${end} -eq 0) {
-        $zeroCountPt1 = ${zeroCountPt1} + 1
+        $zeroCount = ${zeroCount} + 1
         $zeroCountPt2 = ${zeroCountPt2} + 1
     }
     $zeroCountPt2 = ${zeroCountPt2} + ${zeroPasses}
     $start = ${end}
 }
-Write-Host "Part 1 solution is ${zeroCountPt1}"
+Write-Host "Part 1 solution is ${zeroCount}"
 Write-Host "Part 2 solution is ${zeroCountPt2}"
