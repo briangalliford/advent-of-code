@@ -10,5 +10,5 @@ $idsList = ForEach ($range in ${ranges}) {
 }
 $part1 = (${idsList} | Where-Object { $_ -Match '^([0-9]+)\1$' } | Measure-Object -Sum).Sum
 $part2 = (${idsList} | Where-Object { $_ -Match '^([0-9]+)\1+$' } | Measure-Object -Sum).Sum
-Write-Host "Part 1 solution is ${part1}"
-Write-Host "Part 2 solution is ${part2}"
+Write-Host "Day 2 Part 1 solution is ${part1}"
+Write-Host "Day 2 Part 2 solution is ${part2}"

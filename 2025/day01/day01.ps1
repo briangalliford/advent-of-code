@@ -31,5 +31,5 @@ ForEach ($inst in ${data}) {
     $zeroCountPt2 = ${zeroCountPt2} + ${zeroPasses}
     $start = ${end}
 }
-Write-Host "Part 1 solution is ${zeroCount}"
-Write-Host "Part 2 solution is ${zeroCountPt2}"
+Write-Host "Day 1 Part 1 solution is ${zeroCount}"
+Write-Host "Day 1 Part 2 solution is ${zeroCountPt2}"

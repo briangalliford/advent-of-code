@@ -21,5 +21,5 @@ ForEach ($bank in ${data}) {
     }
     $sumPt2 = ${sumPt2} + [Int64]${maxJolt}
 }
-Write-Host "Part 1 solution is ${sumPt1}"
-Write-Host "Part 2 solution is ${sumPt2}"
+Write-Host "Day 3 Part 1 solution is ${sumPt1}"
+Write-Host "Day 3 Part 2 solution is ${sumPt2}"
