@@ -1,3 +1,4 @@
+clear
 $totalSeconds = `
     (Measure-Command {./2025/day01/day01.ps1}).TotalSeconds + `
     (Measure-Command {./2025/day02/day02.ps1}).TotalSeconds + `
